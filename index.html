@@ -1,0 +1,57 @@
+<style>
+  html {
+    font-family: sans-serif;
+    text-align: center;
+  }
+    #app {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .mole {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+        border: 1px solid #000000;
+    }
+    .black {
+        background-color: black;
+    }
+    #timer {
+        height: 50px;
+        width: 300px;
+        line-height: 50px;
+        border: 1px solid #ff3d5b;
+        margin: 20px auto;
+        font-size: 26px;
+    }
+</style>
+<img src="whackamole.jpg" height="200px"/>
+<h1>Whack a mole!</h1>
+<button id="play-pause-button">Play</button>
+<select id="difficulty">
+  <option value="easy">Easy</option>
+  <option value="normal">Medium</option>
+  <option value="hard">Hard</option>
+</select>
+<button id="reset">Reset</button>
+<div id="lives">
+  Lives<br />
+  <span>&hearts;</span>
+  <span>&hearts;</span>
+  <span>&hearts;</span>
+</div>
+<div id="timer"></div>
+<div id="scoreboard">
+  SCORE: <input type="text" id="score" disabled size="10"/>
+  <button id="toggle-highscores">Toggle highscores</button>
+  <div id="highscores">
+
+  </div>
+</div>
+
+<div id="app">
+
+</div>
+
+<script src="script.js"></script>
